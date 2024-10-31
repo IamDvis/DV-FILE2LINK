@@ -6,7 +6,7 @@
 
 <h3 align="center">
     
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=dv-file2link&type=git&repository=IamDvis%2FDV-&branch=main&builder=dockerfile&env%5BBOT_TOKEN%5D=&env%5BMONGO_URL%5D=&env%5BOWNER_ID%5D=&ports=8000%3Bhttp%3B%2F)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=dv-file2link&type=git&repository=IamDvis%2FDV-&branch=main&builder=dockerfile&env%5BBOT_TOKEN%5D=&env%5BDATABASE_URI%5D=&env%5BOWNER_ID%5D=&env%5BURL%5D=&ports=8080%3Bhttp%3B%2F)
 
 </h3>
 
