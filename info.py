@@ -39,6 +39,6 @@ DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "ERASTREAM")
 
 # Shortlink Info
-SHORTLINK = bool(environ.get('SHORTLINK', False)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'teraboxlinks.com/api')
+SHORTLINK = bool(environ.get('SHORTLINK', True)) # Set True Or False
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'teraboxlinks.com/st')
 SHORTLINK_API = environ.get('SHORTLINK_API', '4b7ded045ff9b38818660f6f96995288d6ca59e2')
