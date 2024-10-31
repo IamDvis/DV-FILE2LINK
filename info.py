@@ -5,8 +5,8 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'ERASTREAMBot')
-API_ID = int(environ.get('API_ID', '22652940'))
-API_HASH = environ.get('API_HASH', '91ec0cf5f722101c98fef8f0c6aedd0e')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
