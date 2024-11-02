@@ -82,7 +82,7 @@ async def stream_start(client, message):
 
 <b>📥 Dᴏᴡɴʟᴏᴀᴅ : [Click here to Download]({download})</b> 
 
-<b> 🖥ᴡᴀᴛᴄʜ  :</b> <i>[Click here to Watch]({stream})</i>
+<b> 🖥ᴡᴀᴛᴄʜ  :</b> [Click here to Watch]({stream})
 
 <b>🚸 Nᴏᴛᴇ : ʟɪɴᴋ ᴡᴏɴ'ᴛ ᴇxᴘɪʀᴇ ᴛɪʟʟ ɪ ᴅᴇʟᴇᴛᴇ</b>"""
 
