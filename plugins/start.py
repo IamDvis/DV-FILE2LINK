@@ -58,7 +58,7 @@ async def stream_start(client, message):
     else:
         stream = await get_shortlink(f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}")
         download = await get_shortlink(f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}")
-        
+
     await log_msg.reply_text(
         text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• 𝗙𝗜𝗟𝗘 𝗡𝗔𝗠𝗘 : {fileName}",
         quote=True,
@@ -74,11 +74,7 @@ async def stream_start(client, message):
             ]
         ] 
     )
-
-
-
-
-msg_text = """<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>
+    msg_text = """<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>
 
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{filename}</i>
 
@@ -92,8 +88,8 @@ msg_text = """<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮�
 
 
     await message.reply_text(
-    text=msg_text,
-    quote=True,
-    disable_web_page_preview=True,
-    reply_markup=rm
-)
+        text=msg_text,
+        quote=True,
+        disable_web_page_preview=True,
+        reply_markup=rm
+    )
