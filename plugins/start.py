@@ -76,19 +76,19 @@ async def stream_start(client, message):
     )
     msg_text = """<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>
 
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{filename}</i>
+<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>
 
-<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{filesize}</i>
+<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>
 
-<b>📥 Dᴏᴡɴʟᴏᴀᴅ : [Click here to Download]({download})</b> 
+<b>📥 Dᴏᴡɴʟᴏᴀᴅ : <a href="{}">Click here to Download</a> </b> 
 
-<b> 🖥ᴡᴀᴛᴄʜ  :</b> [Click here to Watch]({stream})
+<b> 🖥ᴡᴀᴛᴄʜ  :</b> <a href="{}">Click here to Watch</a>
 
 <b>🚸 Nᴏᴛᴇ : ʟɪɴᴋ ᴡᴏɴ'ᴛ ᴇxᴘɪʀᴇ ᴛɪʟʟ ɪ ᴅᴇʟᴇᴛᴇ</b>"""
 
 
     await message.reply_text(
-        text=msg_text,
+        text=msg_text.format(filename,filesize,download,stream),
         quote=True,
         disable_web_page_preview=True,
         reply_markup=rm
