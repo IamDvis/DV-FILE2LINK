@@ -63,8 +63,11 @@ async def stream_start(client, message):
         text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• 𝗙𝗜𝗟𝗘 𝗡𝗔𝗠𝗘 : {fileName}",
         quote=True,
         disable_web_page_preview=True,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
-                                            InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)]])  # web stream Link
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ 🚀", url=download),  # we download Link
+                                            InlineKeyboardButton('🖥️ Wᴀᴛᴄʜ Oɴʟɪɴᴇ 🖥️', url=stream)
+                                           ],[
+                                           InlineKeyboardButton("• Wᴀᴛᴄʜ Iɴ Wᴇʙ Aᴘᴘ •", web_app=WebAppInfo(url=stream))
+                                            ]])  # web stream Link
     )
     rm=InlineKeyboardMarkup(
         [
@@ -80,9 +83,9 @@ async def stream_start(client, message):
 
 <b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>
 
-<b>📥 Dᴏᴡɴʟᴏᴀᴅ : <a href="{}">Click here to Download</a> </b> 
+<b>📥 Dᴏᴡɴʟᴏᴀᴅ : <a href="{}">𝗖𝗹𝗶𝗰𝗸 𝗵𝗲𝗿𝗲 𝘁𝗼 𝗙𝗮𝘀𝘁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱</a> </b> 
 
-<b> 🖥ᴡᴀᴛᴄʜ  :</b> <a href="{}">Click here to Watch</a>
+<b> 🖥ᴡᴀᴛᴄʜ  :</b> <a href="{}">𝗖𝗹𝗶𝗰𝗸 𝗵𝗲𝗿𝗲 𝘁𝗼 𝗪𝗮𝘁𝗰𝗵 𝗢𝗻𝗹𝗶𝗻𝗲</a>
 
 <b>🚸 Nᴏᴛᴇ : ʟɪɴᴋ ᴡᴏɴ'ᴛ ᴇxᴘɪʀᴇ ᴛɪʟʟ ɪ ᴅᴇʟᴇᴛᴇ</b>"""
 
