@@ -15,7 +15,8 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /FileToLink
-WORKDIR /FileToLink
-COPY . /FileToLink
+RUN mkdir /DV-FILE2LINK
+WORKDIR /DV-FILE2LINK
+COPY . /DV-FILE2LINK
 CMD ["python", "bot.py"]
+
