@@ -7,16 +7,27 @@
 #
 # All rights reserved.
 
-FROM python:3.10.8-slim-buster
+FROM python:3.13-slim
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1
 
-RUN cd /
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /DV-FILE2LINK
-WORKDIR /DV-FILE2LINK
-COPY . /DV-FILE2LINK
+WORKDIR /app
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        git \
+        build-essential \
+        libssl-dev \
+    && apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+COPY . .
 CMD ["python", "bot.py"]
+
 
